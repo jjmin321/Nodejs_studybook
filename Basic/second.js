@@ -1,3 +1,3 @@
 exports.f2 = function() {
-    console.log("f2 함수 호출");
+    console.log("f2 함수 호출됨");
 }
