@@ -91,6 +91,16 @@ var a = Buffer.alloc(10);
 
 # fs 모듈
 
+fs 모듈은 사용하면 파일 읽고 쓰기(동기, 비동기 모두 가능)를 할 수 있는 모듈이다.
+
+```javascript
+var fs = require("fs");
+
+fs.writeFile("data1.txt", "Hello node.js", function(error){
+    console.log("비동기식 저장 1");
+});
+```
+
 - Node.js에서 파일에 데이터를 쓰고 읽어 올 수 있는 기능을 제공하는 모듈이다.
 
 - writeFile : 비동기식으로 파일에 데이터를 쓴다. 파일이 없으면 새롭게 만들며 파일이 있으면 기존 데이터를 삭제하고 쓴다.
@@ -103,4 +113,5 @@ var a = Buffer.alloc(10);
 
 - appendFileSync : 동기식으로 파일에 데이터를 쓴다. 파일이 없으면 새롭게 만들며 파일이 있으면 기존 데이터에 추가해서 쓴다.
 
+# Path 모듈 
 
