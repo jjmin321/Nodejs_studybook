@@ -1,4 +1,4 @@
-# Nodejs_Studybook
+# Nodejs란?
 
 - node.js는 구글 크롬 브라우저에서 JavaScript 코드를 처리하기위한 엔진인 v8 엔진을 사용하는 서버측 프로그램 개발을 위한 플랫폼이다.
 
@@ -20,6 +20,25 @@
 
 - node.js는 현재 ebay,GE,GoDaddy,Microsoft,PayPal,Wikipins,Yahoo,Yammer,facebook,twitter 등에서 사용되어지고 있다.   
 
+# Assert 모듈
+
+- assert : 주어진 변수가 수식의 값이 0이거나 false인 경우 오류가 발생한다.
+
+- equal : 주어진 두 변수나 수식의 결과 값이 다를 경우 오류가 발생한다. 값의 타입은 무시한다.
+
+- strictEqual : 주어진 두 변수나 수식의 결과 값이 다를 경우 오류가 발생한다. 값의 타입도 검사한다.
+
+- notEqual : 주어진 두 변수나 수식의 결과 값이 같을 경우 오류가 발생한다. 값의 타입은 무시한다.
+
+- notStrictEqual : 주어진 두 변수나 수식의 결과 값이 같을 경우 오류가 발생한다. 값의 타입도 검사한다.
+
+- deepEqual : 두 객체의 멤버가 동일하지 않을 경우 오류가 발생한다. 값의 타입은 무시한다.
+
+- deepStrictEqual : 두 객체의 멤버가 동일하지 않을 경우 오류가 발생한다. 값의 타입도 검사한다.
+
+- notDeepEqual : 두 객체의 멤버가 동일할 경우 오류가 발생한다. 값의 타입은 무시한다.
+
+- notDeepStrictEqual : 두 객체의 멤버가 동일할 경우 오류가 발생한다. 값의 타입도 검사한다.
 
 
 
