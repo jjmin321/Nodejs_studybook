@@ -91,7 +91,7 @@ var a = Buffer.alloc(10);
 
 # fs 모듈
 
-fs 모듈은 사용하면 파일 읽고 쓰기(동기, 비동기 모두 가능)를 할 수 있는 모듈이다.
+fs 모듈은 파일 읽고 쓰기(동기, 비동기 모두 가능)를 할 수 있는 모듈이다.
 
 ```javascript
 var fs = require("fs");
@@ -128,4 +128,28 @@ var path = require("path");
 - path.join : 각 문자열을 합쳐 경로를 만들어준다.
 
 - path.normalize : 해당 경로를 정규화시켜 정확한 경로를 알려준다.
+
+# Http 모듈
+
+Http 모듈은 node.js를 이용해 웹 어플리케이션을 제작할 수 있는 모듈이다.
+
+```javascript
+var http = require("http");
+```
+
+- http.createServer : 서버 생성 
+
+```javascript
+var server = http.createServer(function(req, res){
+});
+```
+
+- res.write : 웹 브라우저에 응답해줄 문자 작성
+
+- res.end() : 응답 종료
+
+- listen : 웹 서버 동작
+
+- res.writeHead : 내용에 따라서 웹 브라우저에게 응답해줄 확장자가 달라짐
+
 
