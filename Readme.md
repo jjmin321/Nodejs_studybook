@@ -148,8 +148,24 @@ var server = http.createServer(function(req, res){
 
 - res.end() : 응답 종료
 
-- listen : 웹 서버 동작
+- listen : 서버를 가동시킨다.
 
 - res.writeHead : 내용에 따라서 웹 브라우저에게 응답해줄 확장자가 달라짐
+
+# Express 모듈
+
+Express 모듈은 웹 어플리케이션 개발을 보다 손쉽게 할 수 있도록 지원하는 모듈이다.
+
+```javascript
+var express = require("express");
+```
+
+- express : express 모듈에서 제공하는 기능을 사용할 수 있는 객체를 반환하는 함수
+
+- get : get 방식으로 요청이 발생했을 때 호출될 함수를 등록한다.
+
+- post : post 방식으로 요청이 발생했을 때 호출될 함수를 등록한다.
+
+- listen : 서버를 가동시킨다.
 
 
