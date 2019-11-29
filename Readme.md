@@ -178,6 +178,20 @@ var controller1 = require("./router/controller1")(app);
 var controller2 = require("./router/controller2")(app);
 ```
 
+# Express 모듈 - 랜더링
+
+Express 모듈에서 랜더링 모듈을 사용하면 외부 html 문서를 읽어다 응답결과로 전달할 수 있다.
+
+```javascript
+var ejs = require("ejs");
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs"); 
+app.engine("html", ejs.renderFile);
+app.use(express.static(__dirname + "/public"));
+```
+
+
+
 
 
 
