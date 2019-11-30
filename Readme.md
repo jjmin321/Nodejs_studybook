@@ -180,18 +180,23 @@ var controller2 = require("./router/controller2")(app);
 
 # Express 모듈 - 랜더링
 
-Express 모듈에서 랜더링 모듈을 사용하면 외부 html 문서를 읽어다 응답결과로 전달할 수 있다.
+1. Express 모듈에서 랜더링 모듈을 사용하면 외부 html 문서를 읽어다 응답결과로 전달할 수 있다.
 
+2. Express 모듈에서 랜더링 모듈을 사용하면 동적 웹 애플리케이션을 제작할 수 있다.
+
+- 랜더링 엔진을 ejs로 설정하기
 ```javascript
 var ejs = require("ejs");
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs"); 
-app.engine("html", ejs.renderFile);
+app.engine("ejs", ejs.renderFile);
 app.use(express.static(__dirname + "/public"));
 ```
 
-
-
-
-
+```javascript
+module.exports = function(app){
+    app.get("/", function(req, res){
+        res.render("index.ejs")
+    });
+```
 
