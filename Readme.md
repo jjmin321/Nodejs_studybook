@@ -1,4 +1,4 @@
-# Nodejs란?
+# 🕹️ Nodejs란? 🕹️
 
 - node.js는 구글 크롬 브라우저에서 JavaScript 코드를 처리하기위한 엔진인 v8 엔진을 사용하는 서버측 프로그램 개발을 위한 플랫폼이다.
 
@@ -20,7 +20,7 @@
 
 - node.js는 현재 ebay,GE,GoDaddy,Microsoft,PayPal,Wikipins,Yahoo,Yammer,facebook,twitter 등에서 사용되어지고 있다.   
 
-# Assert 모듈
+# 📁 Assert 모듈
 
 Assert 모듈은 프로그램에서 사용할 값이나 수식을 검사할 수 있는 모듈이다.
 
@@ -47,7 +47,7 @@ var assert = require("assert");
 - assert.notDeepStrictEqual : 두 객체의 멤버가 동일할 경우 오류가 발생한다. 값의 타입도 검사한다.
 
 
-# Buffer 모듈
+# 📁 Buffer 모듈
 
 Buffer 모듈은 원하는 바이트의 기억공간을 동적할당 할 수 있는 모듈이다.
 
@@ -89,7 +89,7 @@ var a = Buffer.alloc(10);
 
 - toString : 버퍼에 저장된 값을 문자열로 가져온다.
 
-# fs 모듈
+# 📁 fs 모듈
 
 fs 모듈은 파일 읽고 쓰기(동기, 비동기 모두 가능)를 할 수 있는 모듈이다.
 
@@ -109,7 +109,7 @@ var fs = require("fs");
 
 - fs.appendFileSync : 동기식으로 파일에 데이터를 쓴다. 파일이 없으면 새롭게 만들며 파일이 있으면 기존 데이터에 추가해서 쓴다.
 
-# Path 모듈 
+# 📁 Path 모듈 
 
 Path 모듈은 경로에 대한 직업을 할 수 있는 모듈이다.
 
@@ -129,7 +129,7 @@ var path = require("path");
 
 - path.normalize : 해당 경로를 정규화시켜 정확한 경로를 알려준다.
 
-# Http 모듈
+# 📁 Http 모듈
 
 Http 모듈은 node.js를 이용해 웹 어플리케이션을 제작할 수 있는 모듈이다.
 
@@ -152,7 +152,7 @@ var server = http.createServer(function(req, res){
 
 - res.writeHead : 내용에 따라서 웹 브라우저에게 응답해줄 확장자가 달라짐
 
-# Express 모듈
+# 📁 Express 모듈
 
 Express 모듈은 웹 어플리케이션 개발을 보다 손쉽게 할 수 있도록 지원하는 모듈이다.
 
@@ -169,7 +169,7 @@ var app = express();
 
 - listen : 서버를 가동시킨다.
 
-# Express 모듈 - 라우팅
+# 📁 Express 모듈 - 라우팅
 
 Express 모듈에서 라우팅 기능을 이용하면 수많은 요청들을 여러 파일로 분리하여 관리할 수 있다.
 
@@ -178,7 +178,7 @@ var controller1 = require("./router/controller1")(app);
 var controller2 = require("./router/controller2")(app);
 ```
 
-# Express 모듈 - 랜더링
+# 📁 Express 모듈 - 랜더링
 
 1. Express 모듈에서 랜더링 모듈을 사용하면 외부 html 문서를 읽어다 응답결과로 전달할 수 있다.
 
